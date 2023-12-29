@@ -1,0 +1,150 @@
+
+@font-face {
+    font-family: cocogose;
+    src: url(fuentes/Cocogoose-Pro-Bold-trial.ttf);
+}
+
+@font-face {
+    font-family: altone;
+    src: url(fuentes/AltoneTrial-Regular.ttf);
+}
+
+@font-face {
+    font-family: altonebold;
+    src: url(fuentes/AltoneTrial-Bold.ttf);
+}
+
+body {
+    background-color: rgb(250, 250, 250);
+}
+
+#jony-foto{
+    width: 15%;
+    height: 100%;
+    display: block; /* Asegura que la imagen se comporte como un bloque para aplicar márgenes automáticamente */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+}
+#nav-bar {
+    margin: 2%;
+}
+h1, h2{
+    text-align: center;
+    color: rgb(49, 49, 49);
+}
+
+h1{
+    font-family: altonebold;
+}
+
+h2 {
+    font-family: altone;
+    color: #204471;
+}
+
+#boton-say-hello {
+    color: #204471;
+    font-size: 100%;
+    border-color: #204471;
+    border-style:dashed;
+    font-family: altonebold;
+
+
+}
+
+#boton-say-hello:hover {
+    background-color: #204471;
+    color: white;
+}
+
+.seccion1 {
+    text-align: center; /* Centra el texto horizontalmente */
+    height: 20%;
+}
+
+
+
+.vacio {
+    color: aliceblue;
+    height: 80px;
+}
+
+.seccion2{
+    width:100%;
+    height: 700px;
+    margin-top: 80px;
+    background-color: #204471;
+}
+
+h6{
+    color: white;
+    font-size: 200%;
+    font-family: altonebold;
+    text-align: center;
+    padding: 10px;
+
+}
+
+
+
+.descripcion {
+    text-align: center;
+    color: aliceblue;
+    font-family: altone;
+}
+
+.div-dentro-seccion2 {
+    padding:60px;
+}
+
+.div-dentro-seccion1 {
+    margin: 4px;
+}
+
+#cartas-div {
+    margin-top: -50px;
+    padding: 60px;
+}
+
+.image-container {
+    display: flex;
+  }
+
+  .image-container img {
+    width: 15%; /* O ajusta el ancho que desees */
+    height: auto;
+    display: block;
+    padding-left: 40px;
+    margin-top: -80px;
+  }
+
+
+
+
+@media only screen and (max-width: 500px) and (min-width: 280px){
+    #cartas-div {
+        margin-top: -100px;
+        padding: 40px;
+        font-size: 70%;
+    }
+    #jony-foto{
+        width: 35%;
+        height: 100%;
+        display: block; /* Asegura que la imagen se comporte como un bloque para aplicar márgenes automáticamente */
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
+    }
+    h1 , h2 {
+        margin-top: 30px;
+        font-size: 180%;
+    }
+    .seccion2{
+        width:100%;
+        height: 800px;
+        margin-top: 80px;
+        background-color: #204471;
+    }
+
+}
