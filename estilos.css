@@ -61,6 +61,45 @@ h2 {
 .seccion1 {
     text-align: center; /* Centra el texto horizontalmente */
     height: 20%;
+    padding: 5%;
+}
+
+/* ... Tus estilos CSS existentes ... */
+
+.seccion1 {
+    text-align: center;
+    opacity: 0;
+    animation: aparecer 1s ease-out forwards; /* 1 segundo de duración, ease-out para una salida suave */
+}
+
+
+
+.h1-animado {
+    margin-top: -50px; /* Mover hacia arriba */
+    opacity: 0;
+    animation: aparecerDesdeArriba 1s ease-out forwards;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes aparecerDesdeArriba {
+    from {
+        margin-top: -50px;
+        opacity: 0;
+    }
+    to {
+        margin-top: 0;
+        opacity: 1;
+    }
 }
 
 
@@ -72,7 +111,7 @@ h2 {
 
 .seccion2{
     width:100%;
-    height: 700px;
+    height: 50%;
     margin-top: 80px;
     background-color: #204471;
 }
@@ -83,19 +122,23 @@ h6{
     font-family: altonebold;
     text-align: center;
     padding: 10px;
-
+    font-size: 220%;
 }
 
 
-
+h5 {
+    font-family: altonebold;
+}
 .descripcion {
     text-align: center;
     color: aliceblue;
     font-family: altone;
+    margin-top: 40px;
+    font-size: 120%;
 }
 
 .div-dentro-seccion2 {
-    padding:60px;
+    padding: 80px;
 }
 
 .div-dentro-seccion1 {
@@ -111,22 +154,95 @@ h6{
     display: flex;
   }
 
-  .image-container img {
-    width: 15%; /* O ajusta el ancho que desees */
-    height: auto;
-    display: block;
-    padding-left: 40px;
-    margin-top: -80px;
-  }
+
+
+.card {
+    border: 5px #ffbd68;
+    border-style:dashed;
+    max-width: 100%; /* O ajusta el porcentaje según tus necesidades */
+
+     
+}
+
+#cartas-div.row {
+    max-width: 100%;
+    justify-content: center;
+}
+
+/* ... Tus estilos CSS existentes ... */
+
+.carta-animada {
+    opacity: 0;
+    transform: translateY(-20px); /* Comienza desde arriba */
+    transition: opacity 1s, transform 1s; /* Transición más lenta (1 segundo) */
+}
+
+.carta-animada.mostrar {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.titulo-seccion2{
+    color: #204471;
+    margin-top: 5%;
+}
 
 
 
+h4 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
 
-@media only screen and (max-width: 500px) and (min-width: 280px){
+.carta-experiencia {
+    margin: 5%;
+    text-align: justify;
+    color: #204471;
+    padding: 2%;
+  
+    border: #ffbd68 solid 2px;
+    background-color: rgba(247, 194, 114, 0.2); /* 32, 68, 113 son los valores RGB del color y 0.2 es el nivel de opacidad */
+}
+
+
+#contienecarta {
+    max-width: 100%;
+    margin: 0;
+}
+#botones {
+    background-color: #204471;
+    color: white;
+    font-family: altone;
+}
+
+#botones:hover {
+    background-color: white;
+    color: #204471;
+}
+
+
+.carta-experiencia {
+    opacity: 0;
+    transform: translateY(-20px); /* Comienza desde arriba */
+    transition: opacity 1s, transform 1s; /* Transición más lenta (1 segundo) */
+}
+
+.carta-experiencia.mostrar {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+@media only screen and (max-width: 730px) and (min-width: 425px){
+    .seccion1{
+        padding: 5%;
+    }
     #cartas-div {
-        margin-top: -100px;
+        margin-top: -50px;
         padding: 40px;
-        font-size: 70%;
+        font-size: 90%;
     }
     #jony-foto{
         width: 35%;
@@ -140,11 +256,81 @@ h6{
         margin-top: 30px;
         font-size: 180%;
     }
-    .seccion2{
-        width:100%;
-        height: 800px;
-        margin-top: 80px;
-        background-color: #204471;
+
+    #contenedor-iconos {
+        display: none;
+       
     }
+    
+
 
 }
+
+@media only screen and (max-width: 425px) and (min-width: 415px){
+    .seccion1{
+        padding: 5%;
+    }
+    #cartas-div {
+        margin-top: -50px;
+        padding: 40px;
+        font-size: 75%;
+    }
+    #jony-foto{
+        width: 35%;
+        height: 100%;
+        display: block; /* Asegura que la imagen se comporte como un bloque para aplicar márgenes automáticamente */
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
+    }
+    h1 , h2 {
+        margin-top: 30px;
+        font-size: 180%;
+    }
+
+    #contenedor-iconos {
+        display: none;
+       
+    }
+    
+
+
+    
+
+}
+
+
+@media only screen and (max-width: 415px) and (min-width: 320px){
+    .seccion1{
+        padding: 5%;
+    }
+    #cartas-div {
+        margin-top: -50px;
+        padding: 40px;
+        font-size: 75%;
+    }
+    #jony-foto{
+        width: 45%;
+        height: 100%;
+        display: block; /* Asegura que la imagen se comporte como un bloque para aplicar márgenes automáticamente */
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
+    }
+    h1 , h2 {
+        margin-top: 30px;
+        font-size: 180%;
+    }
+
+    #contenedor-iconos {
+        display: none;
+       
+    }
+    
+
+
+    
+
+}
+
+
