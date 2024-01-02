@@ -40,6 +40,7 @@ h1{
 
 h2 {
     font-family: altone;
+    margin-top: 2%;
     color: #204471;
 }
 
@@ -61,7 +62,7 @@ h2 {
 .seccion1 {
     text-align: center; /* Centra el texto horizontalmente */
     height: 20%;
-    padding: 5%;
+    padding: 2%;
 }
 
 /* ... Tus estilos CSS existentes ... */
@@ -104,10 +105,7 @@ h2 {
 
 
 
-.vacio {
-    color: aliceblue;
-    height: 80px;
-}
+
 
 .seccion2{
     width:100%;
@@ -198,7 +196,7 @@ h4 {
 }
 
 .carta-experiencia {
-    margin: 10%;
+    margin: 2%;
     text-align: justify;
     color: #204471;
     border: #ffbd68 solid 2px;
@@ -236,7 +234,16 @@ h4 {
 #cartas-experiencias-contenedor  {
     max-width: 100%;
     margin: 0;
+    justify-content: center;
+    padding-left: 8%;
+    padding-right: 8%;
+    margin-top: 2%;
     
+}
+
+#cartas-div {
+    padding-left: 12%;
+    padding-right: 12%;
 }
 
 
@@ -325,7 +332,13 @@ h4 {
        
     }
     
+    p.descripcion {
+        font-size: 100%;
+    }
     
+    h6 {
+        font-size: 160%;
+    }
 
 
     
