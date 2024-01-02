@@ -159,7 +159,8 @@ h5 {
 .card {
     border: 5px #ffbd68;
     border-style:dashed;
-    max-width: 100%; /* O ajusta el porcentaje según tus necesidades */
+    max-width: 100%; 
+    margin: 0;
 
      
 }
@@ -169,7 +170,7 @@ h5 {
     justify-content: center;
 }
 
-/* ... Tus estilos CSS existentes ... */
+
 
 .carta-animada {
     opacity: 0;
@@ -186,6 +187,7 @@ h5 {
 .titulo-seccion2{
     color: #204471;
     margin-top: 5%;
+    max-width: 100%;
 }
 
 
@@ -196,11 +198,9 @@ h4 {
 }
 
 .carta-experiencia {
-    margin: 5%;
+    margin: 10%;
     text-align: justify;
     color: #204471;
-    padding: 2%;
-  
     border: #ffbd68 solid 2px;
     background-color: rgba(247, 194, 114, 0.2); /* 32, 68, 113 son los valores RGB del color y 0.2 es el nivel de opacidad */
 }
@@ -233,6 +233,11 @@ h4 {
     transform: translateY(0);
 }
 
+#cartas-experiencias-contenedor  {
+    max-width: 100%;
+    margin: 0;
+    
+}
 
 
 @media only screen and (max-width: 730px) and (min-width: 425px){
@@ -270,11 +275,7 @@ h4 {
     .seccion1{
         padding: 5%;
     }
-    #cartas-div {
-        margin-top: -50px;
-        padding: 40px;
-        font-size: 75%;
-    }
+
     #jony-foto{
         width: 35%;
         height: 100%;
@@ -300,15 +301,12 @@ h4 {
 }
 
 
-@media only screen and (max-width: 415px) and (min-width: 320px){
+@media only screen and (max-width: 415px) and (min-width: 300px){
     .seccion1{
         padding: 5%;
     }
-    #cartas-div {
-        margin-top: -50px;
-        padding: 40px;
-        font-size: 75%;
-    }
+
+
     #jony-foto{
         width: 45%;
         height: 100%;
@@ -319,13 +317,14 @@ h4 {
     }
     h1 , h2 {
         margin-top: 30px;
-        font-size: 180%;
+        font-size: 140%;
     }
 
     #contenedor-iconos {
         display: none;
        
     }
+    
     
 
 

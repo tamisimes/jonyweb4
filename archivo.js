@@ -1,10 +1,10 @@
 $(document).ready(function() {
     // Agrega la clase 'mostrar' a las cartas cuando están en el área visible
-    $(window).scroll(function() {
-        $('.seccion2').each(function() {
+    $(window).on('scroll resize', function() {
+        $('.seccion2, .seccion3').each(function() {
             if (elementInViewport(this) && !$(this).hasClass('mostrar')) {
                 $(this).addClass('mostrar');
-                $('.carta-animada').each(function(index) {
+                $(this).find('.carta-animada, .carta-experiencia').each(function(index) {
                     var carta = $(this);
                     setTimeout(function() {
                         carta.addClass('mostrar');
