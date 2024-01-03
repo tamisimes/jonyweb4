@@ -73,3 +73,15 @@ function elementInViewport(el) {
         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
 }
+
+
+document.getElementById('boton-say-hello').addEventListener('click', function() {
+    document.getElementById('overlay').style.display = 'block';
+    document.getElementById('contact-form').style.display = 'block';
+  });
+  
+  document.getElementById('overlay').addEventListener('click', function() {
+    document.getElementById('overlay').style.display = 'none';
+    document.getElementById('contact-form').style.display = 'none';
+  });
+  
