@@ -183,7 +183,7 @@ h5 {
 
 
 .titulo-seccion2{
-    color: #204471;
+    color: rgb(49, 49, 49);    
     margin-top: 5%;
     max-width: 100%;
 }
@@ -238,7 +238,13 @@ h4 {
     padding-left: 8%;
     padding-right: 8%;
     margin-top: 2%;
+    padding-bottom: 8%;
+
     
+}
+
+#carta1 , #carta2 {
+    text-align: center;
 }
 
 #cartas-div {
@@ -246,8 +252,40 @@ h4 {
     padding-right: 12%;
 }
 
+.card-header {
+    font-style: oblique;
+} 
+
+.logos-de-empresas {
+    max-width: 100%;
+    text-align: center;
+}
+
+.logoexperiencia1, .logoexperiencia2, .logoexperiencia3 {
+    width: 20%;
+
+}
+
+.logo-ort , .logo-uba {
+    width: 15%;
+}
+
+.titulo-seccion4{
+    padding: 10%;
+}
+
+
+
+@media only screen and (max-width: 3000px)  and (min-width:950px) {
+    #nav-bar {
+        margin: 2%;
+        padding-right: 15%;
+    }
+    
+}
 
 @media only screen and (max-width: 730px) and (min-width: 425px){
+
     .seccion1{
         padding: 5%;
     }
@@ -274,11 +312,15 @@ h4 {
        
     }
     
+    .logos-de-empresas {
+display: none;
+}
 
 
 }
 
 @media only screen and (max-width: 425px) and (min-width: 415px){
+
     .seccion1{
         padding: 5%;
     }
@@ -300,7 +342,9 @@ h4 {
         display: none;
        
     }
-    
+    .logos-de-empresas {
+display: none;
+}
 
 
     
@@ -309,6 +353,7 @@ h4 {
 
 
 @media only screen and (max-width: 415px) and (min-width: 300px){
+
     .seccion1{
         padding: 5%;
     }
@@ -334,6 +379,7 @@ h4 {
     
     p.descripcion {
         font-size: 100%;
+        margin: ;
     }
     
     h6 {
@@ -341,7 +387,11 @@ h4 {
     }
 
 
-    
+    .logos-de-empresas {
+        display: none;
+
+}
+
 
 }
 
