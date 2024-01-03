@@ -155,7 +155,7 @@ h5 {
 
 
 .card {
-    border: 5px #ffbd68;
+    border:#ffbd68 4px; 
     border-style:dashed;
     max-width: 100%; 
     margin: 0;
@@ -199,8 +199,8 @@ h4 {
     margin: 2%;
     text-align: justify;
     color: #204471;
-    border: #ffbd68 solid 2px;
-    background-color: rgba(247, 194, 114, 0.2); /* 32, 68, 113 son los valores RGB del color y 0.2 es el nivel de opacidad */
+    border:#ffbd68 solid 2px;
+    background-color: rgba(230, 225, 217, 0.2); /* 32, 68, 113 son los valores RGB del color y 0.2 es el nivel de opacidad */
 }
 
 
@@ -274,62 +274,7 @@ h4 {
     padding: 10%;
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-  }
-  
-  .contact-form {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color:#204471;
-    padding: 5%;
-    border-radius: 5px;
-    z-index: 2;
-    color: aliceblue;
-    font-family: altonebold;
-    font-size: 120%;
-  }
-  
-  .contact-form label {
-    display: block;
-    margin-bottom: 2%;
-  }
-  
-  .contact-form input,
-  .contact-form textarea,
-  .contact-form button {
-    width: 100%;
-    padding: 2%;
-    margin-bottom: 10%;
-  }
-  
-  .contact-form button {
-    background-color:#ffbd68;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .contact-form button:hover {
-    background-color:#204471;
-    color: #ffbd68;
-  }
-  
+
 
 @media only screen and (max-width: 3000px)  and (min-width:950px) {
     #nav-bar {
