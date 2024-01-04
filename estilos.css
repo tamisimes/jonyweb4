@@ -114,7 +114,7 @@ transition: all 1s ease;
 .seccion2{
     width:100%;
     height: 50%;
-    margin-top: 80px;
+    margin-top: 4%;
     background-color: #204471;
 }
 
@@ -123,7 +123,7 @@ h6{
     font-size: 200%;
     font-family: altonebold;
     text-align: center;
-    padding: 10px;
+    padding: 2%;
     font-size: 220%;
 }
 
@@ -135,21 +135,21 @@ h5 {
     text-align: center;
     color: aliceblue;
     font-family: altone;
-    margin-top: 40px;
+    margin-top: 2%;
     font-size: 120%;
 }
 
 .div-dentro-seccion2 {
-    padding: 80px;
+    padding: 4%;
 }
 
 .div-dentro-seccion1 {
-    margin: 4px;
+    margin: 2%;
 }
 
 #cartas-div {
-    margin-top: -50px;
-    padding: 60px;
+    margin-top: -2%;
+    padding: 2%;
 }
 
 .image-container {
@@ -159,8 +159,7 @@ h5 {
 
 
 .card {
-    border:#ffbd68 4px; 
-    border-style:dashed;
+    border:#ffbd68 2px solid; 
     max-width: 100%; 
     margin: 0;
 
@@ -190,7 +189,7 @@ h5 {
     color: rgb(49, 49, 49);    
     margin-top: 5%;
     max-width: 100%;
-    font-style: oblique;
+    font-size: 200%;
 }
 
 
@@ -281,17 +280,16 @@ h4 {
     text-shadow: 2px 10px 4px rgb(243, 243, 243);
     opacity: 100;
     font-family: altonebold;
-    font-style: oblique;
+    margin-top: 4%;
+
     
 }
 
 .marquee-container {
     width: 100%;
-    background-color:rgba(92, 92, 92, 0.274);
+    background-color:rgba(196, 196, 196, 0.274);
     color:#204471;
     overflow: hidden;  /* Oculta la barra de desplazamiento */
-    text-align: center;
-
 }
 
 .skills-list {
@@ -302,15 +300,40 @@ h4 {
     animation: marquee 50s linear infinite;
 }
 
+.marquee-container2 {
+    background-color:#204471;
+    color: white;
+    margin-top: 4%;
+
+}
 .skills-list li {
     padding: 0 20px;
     white-space: nowrap;
     list-style: none; /* Elimina los puntos de la lista */
 
 }
-.subtitulo-skills {
-    color: rgb(49, 49, 49);
+
+.habilidades-lista{
+    padding-left: 20%;
 }
+
+.span-titulo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 150%;
+}
+
+span{
+    color: #ffbd68;
+}
+
+
+.skills-lista2 {
+    margin-bottom: 10px;
+    position: relative;
+    list-style: none;
+    font-family: altone;
+    font-size: 130%;
+  }
 
 @keyframes marquee {
     0% {
@@ -337,8 +360,8 @@ h4 {
         padding: 5%;
     }
     #cartas-div {
-        margin-top: -50px;
-        padding: 40px;
+        margin-top: -4%;
+        padding: 2%;
         font-size: 90%;
     }
     #jony-foto{
@@ -350,7 +373,7 @@ h4 {
         margin-top: 10%;
     }
     h1 , h2 {
-        margin-top: 30px;
+        margin-top: 1%;
         font-size: 180%;
     }
 
@@ -362,11 +385,27 @@ h4 {
     .logos-de-empresas {
 display: none;
 }
+#carta1 , #carta2 {
+    text-align: center;
+}
+
+#cartas-div {
+    padding-left: 12%;
+    padding-right: 6%;
+}
+p.descripcion {
+    font-size: 100%;
+}
+
+h6 {
+    font-size: 160%;
+}
+
 
 
 }
 
-@media only screen and (max-width: 425px) and (min-width: 415px){
+@media only screen and (max-width: 430px) and (min-width: 415px){
 
     .seccion1{
         padding: 5%;
@@ -394,10 +433,42 @@ display: none;
 }
 
 
-    
+h6 {
+    font-size: 160%;
+}
 
 }
 
+@media only screen and (max-width: 500px) and (min-width: 300px){
+
+
+.marquee-container {
+    font-size: 80%;
+}
+
+.skills-lista2 {
+    margin-right: 15%;
+
+}
+.titulo-seccion2{
+    font-size: 150%;
+
+}
+.descripcion {
+    padding: 4%;
+}
+#carta1 , #carta2 {
+    text-align: center;
+}
+
+#cartas-div {
+    padding-left: 12%;
+    padding-right: 6%;
+}
+p.descripcion {
+    font-size: 100%;
+}
+}
 
 @media only screen and (max-width: 415px) and (min-width: 300px){
 
@@ -438,6 +509,32 @@ display: none;
 
 }
 
+.marquee-container {
+    font-size: 80%;
+}
+
+.skills-lista2 {
+    margin-right: 15%;
+
+}
+
+.titulo-seccion2{
+    font-size: 130%;
+    margin: 10%;
+}
+
+
+#carta1 , #carta2 {
+    text-align: center;
+}
+
+#cartas-div {
+    padding-left: 12%;
+    padding-right: 5%;
+}
+p.descripcion {
+    font-size: 100%;
+}
 
 }
 
