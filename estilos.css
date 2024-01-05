@@ -113,7 +113,9 @@ transition: all 1s ease;
 .seccion2{
     width:100%;
     height: 50%;
-    margin-top: 8%;
+    border-top:#fcab41 solid 1px;
+    margin-top: 5%;
+    padding-top: 5%;
     background-color:#204471;
 }
 
