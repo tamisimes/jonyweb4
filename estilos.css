@@ -15,7 +15,7 @@
 }
 
 body {
-    background-color: #204471
+    background-color: #204471;
 }
 
 #jony-foto{
@@ -51,9 +51,9 @@ h2 {
     font-size: 130%;
     border-color:#ffbd68;
     border-style:dashed;
-    border-radius: 25px;
+    border-radius: 30px;
     font-family: altone;
-transition: all 1s ease;
+transition: all 3s ease;
   position: relative;
 }
 
@@ -115,18 +115,17 @@ transition: all 1s ease;
     border-top:#fcab41 solid 1px;
     margin-top: 5%;
     padding-top: 5%;
-    background-color:#204471;
+    background-color:#efefef;
 }
 
 .div-dentro-seccion2 {
     background-color: white;
-    border: 8px solid #204471; /* Cambié a un valor absoluto para el ancho del borde */
-    border-radius: 20px; /* Cambié a un valor absoluto para el radio del borde */
-    margin-left: 15%;
-    margin-right: 15%;
-    padding: 20px; /* Ajusta este valor según tus necesidades */
+    border-radius: 20px; 
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 20px; 
+    margin-bottom: 7%;
 }
-
 
 h6{
     color:rgb(44, 44, 44);
@@ -161,7 +160,7 @@ h5 {
 }
 
 .carta-animada {
-    border:#55575a 1px solid ; /* Borde de 2px para las cartas */
+    border:#959697 1px solid ; /* Borde de 2px para las cartas */
     box-shadow: #a1a1a1 2px 2px 2px;
     margin-bottom: 2%; /* Espaciado entre las cartas */
 }
@@ -180,14 +179,15 @@ h5 {
 
 .titulo-seccion2{
     color: rgb(49, 49, 49);    
-    margin-top: 5%;
     padding-top: 5%;
     max-width: 100%;
     font-size: 200%;
 }
 
 .seccion3 {
-    background-color: white;
+    background-color:#204471;
+    color: #e6e6e6;
+    padding-bottom: 7%;
 }
 
 
@@ -240,10 +240,10 @@ h4 {
     max-width: 100%;
     margin: 0;
     justify-content: center;
-    padding-left: 14.5%;
-    padding-right: 14.5%;
+    padding-left: 18.2%;
+    padding-right: 18.2%;
     margin-top: 2%;
-    padding-bottom: 8%;
+    padding-bottom: 2%;
 
     
 }
@@ -267,47 +267,35 @@ h4 {
     width: 15%;
 }
 
+.navbar-light .navbar-toggler {
+    background-color: #ffbd68;
+}
+
+
 #titulo-seccion4 {
     padding: 2%;
-    color:rgb(49, 49, 49);
-    text-shadow: 2px 10px 4px rgb(243, 243, 243);
+    color:white;
+    text-shadow: 2px 10px 10px rgb(129, 129, 129);
     opacity: 100;
     font-family: altonebold;
     margin-top: 4%;
+    text-align: center;   
+}
 
+
+
+.skills-lista2, .skills-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+
+.column-container {
+    margin-top: 2%;
     
-}
-
-.marquee-container {
-    width: 100%;
-    background-color:rgba(196, 196, 196, 0.274);
-    color:#204471;
-    overflow: hidden;  /* Oculta la barra de desplazamiento */
-}
-
-.skills-list {
-    display: flex;
-    font-family: altone;
-    font-size: 150%;
-    padding: 2%;
-    animation: marquee 50s linear infinite;
-}
-
-.marquee-container2 {
-    background-color:#204471;
-    color: white;
-    margin-top: 4%;
-
-}
-.skills-list li {
-    padding: 0 20px;
-    white-space: nowrap;
-    list-style: none; /* Elimina los puntos de la lista */
-
-}
-
-.habilidades-lista{
-    padding-left: 20%;
 }
 
 .span-titulo{
@@ -323,11 +311,15 @@ footer {
     background-color: #204471;
     width: 100%;
 
+
 }
+
 
 .pie-pagina{
     width: 100%;
     background-color:#204471;
+    text-align: center;
+
 }
 .pie-pagina .grupo-1{
     width: 100%;
@@ -337,6 +329,7 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     grid-gap:50px;
     padding: 45px 0px;
+    text-align: center;
 }
 .pie-pagina .grupo-1 .box figure{
     width: 100%;
@@ -347,11 +340,14 @@ footer {
 }
 .pie-pagina .grupo-1 .box figure img{
     width: 250px;
+    
 }
 .pie-pagina .grupo-1 .box h2{
     color:#fcab41;
     margin-bottom: 25px;
     font-size: 120%;
+    text-align: center;
+
 }
 .pie-pagina .grupo-1 .box p{
     color: #efefef;
@@ -384,9 +380,13 @@ footer {
     font-size: 15px;
 }
 
-.contacto-titulo {
-    text-align: justify;
+.seccion4 {
+    background-color:white;
+    padding-top: 1%;
+    padding-bottom: 2%;
 }
+
+
 
 @media screen and (max-width:800px){
     .pie-pagina .grupo-1{
@@ -429,12 +429,20 @@ a:hover{
     }
 }
 
+.imagen-tami {
+    width: 7%;
+}
 
+
+#jony-foto-final {
+    width: 40%;
+
+}
 
 @media only screen and (max-width: 3000px)  and (min-width:950px) {
     #nav-bar {
         margin: 2%;
-        padding-right: 15%;
+        padding-right: 10%;
     }
     
 }
