@@ -516,8 +516,20 @@ h6 {
 }
 
 
+.div-dentro-seccion3 {
+    margin-left: 7%;
+    margin-right: 7%;
+    font-size: 90%;
+   
 }
 
+#cartas-experiencias-contenedor  {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+
+}
+
+}
 
 @media only screen and (max-width: 400px) and (min-width: 300px){
 
@@ -589,8 +601,15 @@ h6 {
     padding: 10%; /* Ajusta este valor según tus necesidades */
 }
 
-
+.div-dentro-seccion3 {
+    margin-left: 7%;
+    margin-right: 7%;
+    font-size: 90%;
+   
+}
+#cartas-experiencias-contenedor  {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
 
 }
-
-
+}
