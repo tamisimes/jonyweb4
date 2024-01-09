@@ -73,4 +73,8 @@ function elementInViewport(el) {
         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
 }
+ScrollReveal().reveal('.seccion2', { delay: 300 });
+ScrollReveal().reveal('.seccion3', { delay: 300 });
+ScrollReveal().reveal('.seccion4', { delay: 300 });
+
 

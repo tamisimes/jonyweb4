@@ -65,23 +65,22 @@ transition: all 3s ease;
 }
 
 .seccion1 {
-    text-align: center; /* Centra el texto horizontalmente */
+    text-align: center; 
     height: 5%;
     padding: 2%;
 }
 
-/* ... Tus estilos CSS existentes ... */
 
 .seccion1 {
     text-align: center;
     opacity: 0;
-    animation: aparecer 1s ease-out forwards; /* 1 segundo de duración, ease-out para una salida suave */
+    animation: aparecer 1s ease-out forwards; 
 }
 
 
 
 .h1-animado {
-    margin-top: -50px; /* Mover hacia arriba */
+    margin-top: -50px; 
     opacity: 0;
     animation: aparecerDesdeArriba 1s ease-out forwards;
 }
@@ -97,6 +96,12 @@ transition: all 3s ease;
     }
 }
 
+@mixin make-row($gutter: $grid-gutter-width) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0;
+    margin-left: 0;
+  }
 @keyframes aparecerDesdeArriba {
     from {
         margin-top: -50px;
@@ -151,24 +156,24 @@ h5 {
 }
 
 .seccion2 {
-    text-align: center; /* Centra el contenido de la sección */
+    text-align: center; 
 }
 
 .div-dentro-seccion2 {
-    display: inline-block; /* Permite que el ancho del contenedor sea igual al contenido */
-    padding: 2%; /* Ajusta este valor según tus necesidades */
+    display: inline-block; 
+    padding: 2%; 
 }
 
 .carta-animada {
-    border:#959697 1px solid ; /* Borde de 2px para las cartas */
+    border:#959697 1px solid ;
     box-shadow: #a1a1a1 2px 2px 2px;
-    margin-bottom: 2%; /* Espaciado entre las cartas */
+    margin-bottom: 2%;
 }
 
 .carta-animada {
     opacity: 0;
-    transform: translateY(-20px); /* Comienza desde arriba */
-    transition: opacity 1s, transform 1s; /* Transición más lenta (1 segundo) */
+    transform: translateY(-20px); 
+    transition: opacity 1s, transform 1s; 
 }
 
 .carta-animada.mostrar {
@@ -201,7 +206,7 @@ h4 {
     text-align: justify;
     color: #204471;
     border:#ffbd68 solid 1px;
-    background-color: rgba(230, 225, 217, 0.2); /* 32, 68, 113 son los valores RGB del color y 0.2 es el nivel de opacidad */
+    background-color: rgba(230, 225, 217, 0.2);
 }
 
 .card-title {
@@ -227,8 +232,8 @@ h4 {
 
 .carta-experiencia {
     opacity: 0;
-    transform: translateY(-20px); /* Comienza desde arriba */
-    transition: opacity 1s, transform 1s; /* Transición más lenta (1 segundo) */
+    transform: translateY(-20px); 
+    transition: opacity 1s, transform 1s; 
 }
 
 .carta-experiencia.mostrar {
@@ -284,13 +289,6 @@ h4 {
 
 
 
-.skills-lista2, .skills-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
-
-}
 
 
 .column-container {
@@ -304,7 +302,7 @@ h4 {
 }
 
 span{
-    color: #ffbd68;
+    color:#204471;
 }
 
 footer {
@@ -387,6 +385,18 @@ footer {
 }
 
 
+.div-dentro-seccion3 {
+    background-color:#ffbd68;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 10px;
+    color: #204471;
+    padding: 2%;
+    font-family: altone;
+    box-shadow: 2px 2px 10px rgb(197, 194, 194);
+    font-size: 120%;
+}
+
 
 @media screen and (max-width:800px){
     .pie-pagina .grupo-1{
@@ -417,7 +427,7 @@ a:hover{
     position: relative;
     list-style: none;
     font-family: altone;
-    font-size: 130%;
+    font-size: 110%;
   }
 
 @keyframes marquee {
@@ -438,6 +448,9 @@ a:hover{
     width: 40%;
 
 }
+
+
+
 
 @media only screen and (max-width: 3000px)  and (min-width:950px) {
     #nav-bar {
